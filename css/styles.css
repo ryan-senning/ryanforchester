@@ -308,6 +308,12 @@ p:last-child { margin-bottom: 0; }
   font-family: var(--serif);
   line-height: 1.5;
 }
+.tagline-accent {
+  color: var(--gold);
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 700;
+}
 .hero-intro {
   font-size: 1rem;
   line-height: 1.7;
