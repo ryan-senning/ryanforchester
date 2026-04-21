@@ -311,7 +311,7 @@ p:last-child { margin-bottom: 0; }
 .tagline-accent {
   color: var(--gold);
   font-family: var(--sans);
-  font-style: normal;
+  font-style: italic;
   font-weight: 700;
 }
 .hero-intro {
