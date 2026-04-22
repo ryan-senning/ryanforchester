@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 <body>
 
@@ -19,9 +19,21 @@
         Ryan Senning
         <span class="nav-brand-sub">for Chester Town Board</span>
       </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-menu" role="list">
+        <li><a href="about.html">Professional Background</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="why.html">Why I'm Running</a></li>
         <li><a href="https://www.actblue.com/PLACEHOLDER" class="btn btn--donate">Donate</a></li>
       </ul>
+    </div>
+    <div class="nav-drawer" role="navigation" aria-label="Mobile navigation">
+      <a href="about.html">Professional Background</a>
+      <a href="community.html">Community</a>
+      <a href="why.html">Why I'm Running</a>
+      <a href="https://www.actblue.com/PLACEHOLDER" class="btn btn--donate">Donate</a>
     </div>
   </nav>
 
@@ -48,19 +60,19 @@
     <div class="nav-tiles-inner">
       <a href="about.html" class="nav-tile">
         <span class="nav-tile-eyebrow">Professional Background</span>
-        <h2>A Career Built on Making Systems Work</h2>
+        <h2>A Career Built on Making Systems <span class="marker">Work</span></h2>
         <p>From NYC public school classrooms to oncology healthcare design — a career dedicated to equity, access, and human-centered problem solving.</p>
         <span class="nav-tile-arrow">→</span>
       </a>
       <a href="community.html" class="nav-tile">
         <span class="nav-tile-eyebrow">Community</span>
-        <h2>Rooted in Sugar Loaf. Invested in Chester.</h2>
+        <h2>Rooted in Sugar Loaf. Invested in <span class="marker">Chester</span>.</h2>
         <p>Active at Town Board meetings. Director of the Sugar Loaf Community Foundation. Invested in Chester's future before this race began.</p>
         <span class="nav-tile-arrow">→</span>
       </a>
       <a href="why.html" class="nav-tile">
         <span class="nav-tile-eyebrow">Why I'm Running</span>
-        <h2>For All of Chester. For All of Its People.</h2>
+        <h2>For <span class="marker">All</span> of Chester. For All of Its People.</h2>
         <p>Transparency, accountability, and a Town Board that makes decisions not just for some residents — but for everyone.</p>
         <span class="nav-tile-arrow">→</span>
       </a>
