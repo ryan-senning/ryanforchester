@@ -308,7 +308,7 @@ p:last-child { margin-bottom: 0; }
   bottom: 0;
   right: 18px;
   top: 18px;
-  border: 3px solid var(--gold);
+  border: 8px solid var(--gold);
   pointer-events: none;
   z-index: 2;
 }
