@@ -165,6 +165,10 @@ p:last-child { margin-bottom: 0; }
 }
 
 .btn--lg { padding: .9rem 2rem; font-size: 1rem; }
+.hero-ctas .btn--lg { padding: .75rem 1.25rem; font-size: .88rem; }
+@media (min-width: 480px) {
+  .hero-ctas .btn--lg { padding: .9rem 2rem; font-size: 1rem; }
+}
 
 /* === NAVIGATION === */
 .site-nav {
@@ -333,16 +337,16 @@ p:last-child { margin-bottom: 0; }
 }
 .hero-ctas {
   display: flex;
-  flex-wrap: wrap;
-  gap: .75rem;
+  flex-wrap: nowrap;
+  gap: .6rem;
 }
 
 @media (min-width: 760px) {
-  .hero { padding: 2.5rem var(--pad-x) 3rem; }
+  .hero { padding: 1.75rem var(--pad-x) 2rem; }
   .hero-inner {
     flex-direction: row;
     align-items: center;
-    gap: 4.5rem;
+    gap: 3rem;
   }
   .hero-text { flex: 1 1 54%; }
   .hero-photo {
