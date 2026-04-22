@@ -195,7 +195,11 @@ p:last-child { margin-bottom: 0; }
   color: var(--navy);
   text-decoration: none;
   line-height: 1.15;
+  border: 2px solid var(--gold);
+  padding: .4rem .65rem;
+  border-radius: 3px;
 }
+.nav-brand:hover { color: var(--navy); }
 .nav-brand-sub {
   display: block;
   font-family: var(--sans);
@@ -291,13 +295,29 @@ p:last-child { margin-bottom: 0; }
 }
 .hero-photo {
   width: 100%;
-  max-width: 320px;
+  max-width: 340px;
   align-self: center;
+  position: relative;
+  padding-left: 18px;
+  padding-bottom: 18px;
+}
+.hero-photo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 18px;
+  top: 18px;
+  border: 2.5px solid var(--gold);
+  border-radius: var(--rad);
+  z-index: 0;
 }
 .hero-photo img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   border-radius: var(--rad);
-  box-shadow: 0 16px 48px rgba(13,31,163,0.2), 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(13,31,163,0.18), 0 2px 8px rgba(0,0,0,0.1);
 }
 .hero-rule {
   width: 44px;
@@ -350,11 +370,9 @@ p:last-child { margin-bottom: 0; }
   }
   .hero-text { flex: 1 1 54%; }
   .hero-photo {
-    flex: 0 0 38%;
+    flex: 0 0 42%;
     max-width: none;
-    align-self: stretch;
-    display: flex;
-    align-items: flex-start;
+    align-self: flex-start;
   }
   .hero-photo img { max-width: 100%; }
 }
